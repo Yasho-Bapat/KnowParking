@@ -1,8 +1,9 @@
 import json
+import os
 
 import requests
 
-API_KEY = 'HM3NdfEtHpDdg9mDIAXp'
+API_KEY = os.getenv('API_KEY')
 
 def get_public_IP():
     response = requests.get('https://api.ipify.org')
